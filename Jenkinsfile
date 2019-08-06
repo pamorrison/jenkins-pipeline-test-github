@@ -13,7 +13,7 @@ pipeline {
             }
             steps {
                 sh 'echo hello'
-                sh 'docker export docker export -o="$(pwd)/thing.tar" grobid_cont
+                sh 'docker export docker export -o="$(pwd)/thing.tar" grobid_cont'
             }
         }
     }
