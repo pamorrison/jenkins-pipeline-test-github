@@ -12,7 +12,7 @@ pipeline {
                 }
             }
             steps {
-                sh {'echo hello'}
+                sh 'echo hello'
             }
         }
     }
