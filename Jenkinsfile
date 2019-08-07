@@ -1,9 +1,14 @@
 pipeline {
-    agent none
+    agent any
     
     stages {
+        stage ('create network') {
+            steps {
+                sh 'docker network create my_net'
+            }
+        }
     
-        stage ('stage 1') {
+        stage ('parallel') {
         
             agent {
                 docker {
